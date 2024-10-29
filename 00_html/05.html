@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 시멘틱 태그, 공간분할 및 공간에 대한 의미 부여
+    header - 제목, 검색 엔진의 노출이 되는 부분(활용성이 높다)
+    nav - 메뉴
+    section - 주요 내용
+    aside - 서브 메뉴(로그인, 배너...)
+    footer - 개발자 정보
+     */
+     /* display
+     1. block : 한줄차지 + 줄바꿈 -> 가로세로 크기 지정이 가능하다.
+     2. inline : 내용 생성 시 자동으로 지정되는 영역 + 줄바꿈X -> 가로세로 크기 지정이 불가하다.
+     3. inline + block : 내용 생성 시 자동으로 지정되는 영역 + 가로세로 크기 지정 가능
+      */
+    body{
+        width: 1280px;
+        height: 1024px;
+        background-color: greenyellow;
+        border: 1px solid;
+        margin: 0px;
+    }
+    header {
+        /* display: inline-block; */
+        float: left;
+        width: 1280px;
+        height: 100px;
+        background-color: red;
+        align-content: center;
+        text-align: center;
+        /* padding-left: 20px; */
+    }
+    header div {
+        width: 500px;
+        border: 1px solid black;
+        display: inline-block;
+        /* margin-left: 100px; */
+        text-align: center;
+    }
+    nav {
+        /* display: inline-block; */
+        float: left;
+        width: 1280px;
+        height: 50px;
+        background-color: orange;
+    }
+    section {
+        /* display: inline-block; */
+        float: left;
+        width: 1000px;
+        height: 500px;
+        background-color: black;
+    }
+    aside {
+        /* display: inline-block; */
+        float: left;
+        width: 280px;
+        height: 500px;
+        background-color: blue;
+    }
+</style>
+<body>
+    <header>
+        <div><h2>조준곤</h2></div>
+        <div><input type="text"></div>
+    </header>
+    <nav>
+        홈으로 공부하기 낚시하기
+    </nav>
+    <section>
+
+    </section>
+    <aside>
+
+    </aside>
+</body>
+</html>

@@ -14,6 +14,7 @@
         width: 1280px;
         height: 1024px;
         border: 1px solid black;
+        font-family: pretendard;
     }
     header {
         /* display: inline-block; */
@@ -38,7 +39,7 @@
         /* display: inline-block; */
         float: left;
         padding-top: 10px;
-        padding-left: 10px;
+        /* padding-left: 10px; */
         box-sizing: border-box;
     }
     aside {
@@ -47,6 +48,8 @@
         background-color: rgb(66, 66, 66);
         /* display: inline-block; */
         float: left;
+        padding-top: 100px;
+        box-sizing: border-box;
     }
     #display {
         width: 100%;
@@ -84,7 +87,7 @@
     nav ul li {
         display: inline-block;
         width: 100px;
-        margin-left: 10px;
+        margin-left: 1%;
         text-align: center;
         border: 1px solid;
     }
@@ -99,6 +102,32 @@
         float: left;
         border: 1px solid white;
         text-align: center;
+    }
+    hr {
+        margin: 1% 1%;
+    }
+    aside div {
+        width: 300px;
+        height: 200px;
+        margin: 0px auto;
+        background-color: rgb(184, 184, 184);
+    }
+    table {
+        border: 1px solid;
+        width: 300px;
+        height: 200px;
+    }
+    table tr, td, th {
+        border: 1px solid;
+    }
+    td {
+        text-align: center;
+    }
+    th {
+        background-color: gray;
+    }
+    th:hover {
+        background-color: white;
     }
 </style>
 <body>
@@ -127,8 +156,9 @@
     </nav>
     <section>
         <div>
-            <span>오늘의 그림</span>
-            <img src="./../sample picture/브루노마스.png" alt="" style="display: block;">
+            <span style="margin: 1% 1%;">오늘의 그림</span>
+            <hr>
+            <img src="./../sample picture/브루노마스.png" alt="" style="display: block; height: 340px; margin: 1% 1%;">
             <!-- 개발자는 src에서 상대경로(현재 위치( . )에 따라 결정)와 절대경로(경로가 루트(시작점)부터 지정)를 숙지한다. 
              이미지 주소는 로컬에 있는 이미지나, 웹에 있는 이미지 모두 가능 -->
              <!-- 웹 이미지는 절대경로다. 웹 이미지를 쓸 때는 저작권을 조심해야 한다. -->
@@ -138,28 +168,50 @@
         </div>
     </section>
     <aside>
-        로그인 등 정보
+        <div>
+            <table> <!-- login table -->
+                <tr>
+                    <td colspan="2">회원이 되어주셔서 감사합니다.</td>
+                </tr>
+                <tr>
+                    <td>ID</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>PASSWORD</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="가입">
+                        <input type="button" value="로그인">
+                    </td>
+                </tr>
+            </table>
+        </div>
     </aside>
     <div id = "display">
+        <p style="margin-left: 10px;">율이의 맛집 List</p>
+        <hr>
         <div class="display_01">
             <h3>최가네</h3>
             <hr>
-            <p>율이는 최가네가 싫다.</p>
+            <p>율이는 순두부가 싫다.</p>
         </div>
         <div class="display_01">
-            <h3>최가네</h3>
+            <h3>더원</h3>
             <hr>
-            <p>율이는 최가네가 싫다.</p>
+            <p>율이는 짜장면이 질린다.</p>
         </div>
         <div class="display_01">
-            <h3>최가네</h3>
+            <h3>이화식당</h3>
             <hr>
-            <p>율이는 최가네가 싫다.</p>
+            <p>율이는 식당 아줌마가 싫다.</p>
         </div>
         <div class="display_01">
-            <h3>최가네</h3>
+            <h3>영미분식</h3>
             <hr>
-            <p>율이는 최가네가 싫다.</p>
+            <p>율이는 생각보다 좋아하는거 같다.</p>
         </div>
     </div>
     <footer>

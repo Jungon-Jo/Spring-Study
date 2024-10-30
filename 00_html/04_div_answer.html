@@ -2,7 +2,7 @@
 <html lang="en">
 <style>
     body {
-        background-color: greenyellow;
+        background-color: black;
         width: 1024px;
         margin: 0px;
     }
@@ -11,17 +11,19 @@
         width: 1024px;
         height: 200px;
         display: inline-block;
-        justify-content: center;
-        align-items: center;
-    }
-    header input {
-        width: 400px;
-        height: 17px;
         text-align: center;
-        margin-right: 10px;
+        align-content: center;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    header input, button {
+        width: 400px;
+        /* height: 17px; */
+        text-align: center;
+        margin-right: 5px;
     }
     ul {
-        display: inline-block;
+        /* display: inline-block; */
         align-items: center;
         padding: 0;
         margin: 0;
@@ -33,23 +35,6 @@
         float: left;
         line-height: 30px;
         background-color: darkgreen;
-    }
-    section {
-        width: 768px;
-        height: 300px;
-        background-color: red;
-        float: left;
-    }
-    .login {
-        width: 256px;
-        height: 300px;
-        background-color: blue;
-        display: grid;
-        /* grid-template-columns: 50px 100px 100px;
-        grid-template-rows: 30px 30px 240px; */
-    }
-    .login input {
-        width: 90px;
     }
     a {
         color: white;
@@ -64,8 +49,8 @@
 </head>
 <body>
     <header>
-        <input type="text">
-        <button>검색</button>
+        <input type="text" style="height: 25px;">
+        <button style="width: 50px; height: 30px;">검색</button>
     </header>
     <nav>
         <ul>
@@ -76,20 +61,35 @@
         </ul>
     </nav>
     <section>
+        <div style="width: 768px; height: 300px; background-color: red; float: left;">
 
-    </section>
-    <div class = "login">
-        <div style="text-align: right; float: right;">
-            <div style="margin-top: 20px;">
-                <span style="color: white; margin-right: 10px;">아이디</span>
-                <input type="text" style="margin-right: 10px;">
-            </div>
-            <div style="margin-bottom: 10px;">
-                <span style="color: white; margin-right: 10px;">패스워드</span>
-                <input type="text" style="margin-right: 10px;">
-            </div>
-            <button style="margin-right: 10px; width: 80px;">로그인</button>
         </div>
-    </div>
+        <div style="width: 256px; height: 300px; background-color: blue; float: left;">
+        <!-- display: grid; grid-template-columns: 50px 100px 100px;
+        grid-template-rows: 30px 30px 240px -->
+            <div style="text-align: right; float: right;">
+                <div style="margin-top: 20px;">
+                    <span style="color: white; margin-right: 10px;">아이디</span>
+                    <input type="text" style="margin-right: 10px; margin-bottom:10px; width: 125px;">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <span style="color: white; margin-right: 10px;">패스워드</span>
+                    <input type="text" style="margin-right: 10px; width: 125px;">
+                </div>
+                <button style="margin-right: 10px; width: 80px; height: 30px;">로그인</button>
+            </div>
+        </div>
+        <div style="width: 1024px; height: 500px; background-color: greenyellow; float: left;">
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </section>
 </body>
 </html>

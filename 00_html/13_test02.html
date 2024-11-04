@@ -20,10 +20,32 @@
                 <th>선택</th><th>메뉴</th><th>수량</th>
             </tr>
         </table>
+        <button id = "deleteButton">선택 삭제</button>
     </div>
     <!-- <div id = "order"></div> -->
 </body>
 <script>
+    document.getElementById("deleteButton").addEventListener('click', () => {
+        // element를 지정하여 이벤트 리스너 처리, 처리는 람다식으로 코딩
+        // alert("삭제삭제삭제");
+        // alert(orderList.rows.length);
+        for(let i = 1; i < orderList.rows.length; i++) {
+            // console.log(orderList.rows[i]);
+            console.log(orderList.rows[i].cells[0].children[0].checked);
+            // 각 td를 cell이라고 보면 되고, index는 0부터 시작된다.
+            // children은 각 cell의 자식 태그의 index를 뜻한다.
+            // i 는 첫번째 행을 제외한 1부터 시작해야 한다.
+            if(orderList.rows[i].cells[0].children[0].checked) {
+                orderList.deleteRow(i);
+                i--;
+            }
+        }
+    });
+    // jquery  설치는 cdn 방식으로
+    // $('#deleteButton').on('click', () => {
+
+    // });
+
     var menu = ['자장면','볶음밥','탕수육']; // js의 배열은 가변 배열이다
     menu.push('군만두');
     // menu.remove('자장면');
@@ -36,7 +58,7 @@
     for(m of menu) {
         menu_list += m;
     }
-    alert(menu_list);
+    // alert(menu_list);
     pan.innerHTML = menu_list;
 
     function order() {

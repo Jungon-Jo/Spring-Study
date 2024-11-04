@@ -25,3 +25,11 @@ View JS 기능
 .
 .
 .
+
+프로젝트때 언급
+크롬 개발자 모드 사용하여 문제 해결하는 단서를 얻게 됨
+1. element 탐색(노드 탐색 및 선택)
+2. html 문서 소스 탐색 및 구조 분석
+3. 콘솔 활용 - js간단한 테스팅
+4. network - request와 response 과정 분석
+	   url, method, code(304, 404)

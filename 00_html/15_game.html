@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .checkerBoard {
+        position: absolute;
+        /* position: relative; */
+        /* margin-left: 10px;
+        margin-top: 10px; */
+    }
+    .checkerUser {
+        position: absolute;
+        margin-left: 32px;
+        margin-top: 32px;
+    }
+    .checkerUser div {
+        font-size: 0px;
+    }
+    .checkLine {
+        width: 770px;
+        height: 770px;
+        border: 2px solid black;
+        border-collapse: collapse;
+        border-spacing: 0px;
+        box-sizing: border-box;
+        margin-left: 0px;
+        margin-top: 0px;
+        /* position: relative; */
+    }
+    .checkLine tr > td {
+        width: 70px;
+        height: 60px;
+        border: 2px solid black;
+        margin: 0px;
+    }
+    .goStone {
+        border: 1px solid black;
+        width: 64px;
+        height: 64px;
+        margin: 0px;
+        border-radius: 100%;
+        background-color: transparent;
+        /* float: left; */
+    }
+</style>
+<script>
+    var countClick = 0;
+    var clickButton = document.getElementsByName()
+    function changeColor() {
+        if(countClick % 2 == 0) {
+            document.getElementsByName()
+        }
+    }
+</script>
+<body>
+    <section class="checkerBoard">
+        <table class="checkLine">
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </table>
+    </section>
+    <section class="checkerUser">
+        <div><button class="goStone" onclick="changeColor()"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button></div>
+        <div><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button></div>
+        <div><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button></div>
+        <div><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button></div>
+        <div><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button></div>
+        <div><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button></div>
+        <div><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button></div>
+        <div><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button></div>
+        <div><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button></div>
+        <div><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button></div>
+        <div><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button><button class="goStone"></button></div>
+    </section>
+</body>
+</html>
